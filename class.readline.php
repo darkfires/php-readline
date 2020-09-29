@@ -428,6 +428,7 @@ $cli->SetCommands(array(array("cmd" => "lset",		"args" => "<var> <value>",	"desc
 			array("cmd" => "exit",		"desc" => "Disconnect and exit",		"func" => "callexit"),
 			array("cmd" => "help",		"desc" => "This help screen",			"sfunc" => "printHelp"),
 			array("alias" => "ls",		"alias_cmd" => "ls --color -F"),
+			array("cmd" => "alias",		"desc" => "Manage command aliases", "func" => "Alias")
 			));
 
 $cli->CLILoop();
